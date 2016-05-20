@@ -1,0 +1,41 @@
+import './FriendListApp.scss';
+
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
+import * as TaskActions from '../../actions/TaskActions';
+
+class FriendListApp extends Component {
+
+  static propTypes = {
+    friendList: PropTypes.object.isRequired,
+    actions: PropTypes.object.isRequired
+  };
+
+  render () {
+    const { friendList: { friendsById }, actions } = this.props;
+
+    return (
+      <div className="idealistApp">
+      </div>
+    );
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    friendList: state.friendList
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(FriendsActions, dispatch)
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(FriendListApp);
