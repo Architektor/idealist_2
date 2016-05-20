@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute, Redirect } from 'react-router';
 
 import App from './components/App';
-import FriendListApp from './containers/FriendListApp/FriendListApp';
+import IdealistApp from './containers/IdealistApp/IdealistApp.js';
 import NotFoundView from './views/NotFoundView';
 
 export default (
