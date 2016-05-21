@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderComponent from '../base/header/component';
 import FooterComponent from '../base/footer/component';
 
-export default class IndexPage extends React.Component {
+export default class ContestItem extends React.Component {
   render() {
     return (
       <div>
