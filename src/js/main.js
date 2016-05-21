@@ -21,11 +21,7 @@ if (process.env.NODE_ENV !== 'production') {
   ComponentEl = (
     <div>
       <Router history={browserHistory} routes={routes} />
-      <div className={'links'}>
-        <Link to={'/'}>addtask  |  </Link>
-        <Link to={'/addtask'}>addtask  |  </Link>
-        <Link to={'/taskscatalog'}>taskscatalog</Link>
-      </div>
+      <DevTools />
     </div>
   );
 } else {
