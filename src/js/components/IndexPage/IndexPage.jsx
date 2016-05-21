@@ -12,6 +12,8 @@ export default class ContestItem extends React.Component {
           <HeaderComponent />
           <IntroComponent />
         </div>
+        <div className={'section'}>
+        </div>
         <FooterComponent />
       </div>
     );

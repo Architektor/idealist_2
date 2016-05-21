@@ -5,7 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore  from './store/configureStore';
-import { Router, browserHistory } from 'react-router';
+import { Router, browserHistory, Link } from 'react-router';
 
 import routes from './routes';
 
@@ -22,11 +22,10 @@ if (process.env.NODE_ENV !== 'production') {
     <div>
       <Router history={browserHistory} routes={routes} />
       <div className={'links'}>
-        <a href="/">home  |  </a>
-        <a href="/addtask">addtask  |  </a>
-        <a href="/taskscatalog">taskscatalog</a>
+        <Link to={'/'}>addtask  |  </Link>
+        <Link to={'/addtask'}>addtask  |  </Link>
+        <Link to={'/taskscatalog'}>taskscatalog</Link>
       </div>
-      <DevTools />
     </div>
   );
 } else {

@@ -53,11 +53,11 @@ body {
 }
 
 .intro__section {
-  height: 100%;
   background-color: rgba(0,0,0,0.7);
   position: absolute;
   width: 100%;
   color: white;
+  padding-bottom: 150px;
 }
 
 .intro__component {
@@ -74,7 +74,9 @@ body {
   bottom:0;
   left:0;
   padding: 5px;
-  color: red;
+  a {
+    color: red;
+  }
 }
 
 footer {
