@@ -1,31 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default class HeaderComponent extends React.Component {
   render() {
     return (
-      <div className={'header'}>
-        <div className={'ui text menu'}>
+      <div className={window.location.pathname === '/' ? 'header main-header' : 'header'}>
+        <div className={'ui text menu'} style={{ margin: 0 }}>
           <div className="header item">
             <div className="logo">
-              <a href="#">
+              <Link to="/">
                 IDEALIST
-              </a>
+              </Link>
             </div>
           </div>
             <div className="item">
-              <a href="#">
+              <Link to="/taskscatalog">
                 Конкурсы
-              </a>
+              </Link>
             </div>
             <div className="item">
-              <a href="#">
+              <Link to="/about">
                 О нас
-              </a>
+              </Link>
             </div>
           <div className="ui right item header-right-side">
-            <div className="login-item">
-              Вход
-            </div>
+            <Link to="/login">
+              <div className="login-item">
+                Вход
+              </div>
+            </Link>
           </div>
         </div>
       </div>

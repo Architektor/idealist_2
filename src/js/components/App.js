@@ -1,6 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 
+import HeaderComponent from './base/header/component';
+import FooterComponent from './base/footer/component';
+
+
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.element.isRequired
@@ -9,12 +13,11 @@ export default class App extends Component {
   render() {
     return (
       <div className="page-container">
-        {this.props.children}
-        <div className={'links'}>
-          <Link to="/">home  |  </Link>
-          <Link to="/addtask">addtask  |  </Link>
-          <Link to="/taskscatalog">taskscatalog</Link>
+        <HeaderComponent />
+        <div className="body-container">
+          {this.props.children}
         </div>
+        <FooterComponent />
       </div>
     );
   }

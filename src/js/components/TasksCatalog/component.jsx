@@ -28,9 +28,7 @@ class TasksCatalog extends React.Component {
               </Link>
             </div>
           )
-        }
-
-      	)}    
+        })}    
         <Link to="addtask">
           linkk
         </Link>
