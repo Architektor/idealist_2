@@ -51,6 +51,10 @@ class AddTask extends React.Component {
               <input value={this.state.label} id="add__task__input" type="text" name="label" onChange={this.handleInput} />
             </div>
             <div className={'field'}>
+              <label>Короткое описание</label>
+              <textarea value={this.state.shortDescription} id="add__task__input" type="text" name="description" onChange={this.handleInput} />
+            </div>
+            <div className={'field'}>
               <label>Подробный бриф</label>
               <textarea value={this.state.description} id="add__task__input" type="text" name="description" onChange={this.handleInput} />
             </div>

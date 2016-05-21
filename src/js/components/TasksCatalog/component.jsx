@@ -8,32 +8,50 @@ import * as TaskActions from '../../actions/TaskActions.js';
 class TasksCatalog extends React.Component {
   render() {
     const tasks = this.props.tasks;
-
-    return (
-      <div>
-      	{Object.keys(tasks).map((task, key) => {
+    let tasklist = Object.keys(tasks).map((key, i) => {
           return (
-            <div key={key}>
-              <h2>label: {tasks[task].label}</h2>
-              <h2>description: {tasks[task].description}</h2>
-              <h2>price: {tasks[task].price}</h2>
-              <h2>tags:</h2>
-              <ul>
-                {tasks[task].tags.map((tag, key) =>
-                  <li key={key}>{tag}</li>
-                )}
-              </ul>
-              <Link to={"contestitem/" + task}>
-                <h1>More info</h1>
-              </Link>
-            </div>
-          )
-        }
-
-      	)}    
-        <Link to="addtask">
-          linkk
-        </Link>
+            <tr key={i}>
+              <td>
+                <Link to={"contestitem/" + i}>
+                  {tasks[key].label}
+                </Link>
+              </td>
+              <td>{tasks[key].shortDescription}</td>
+              <td>Прием идей</td>
+              <td>
+                {tasks[key].tags.map((tag, i) => {
+                   if (i === tasks[key].tags.length - 1) {
+                      return <span key={i}>{tag}</span>;
+                   } else {
+                      return <span key={i}>{tag}, </span>;
+                   }
+                  })
+                } 
+              </td>
+              <td>{tasks[key].price}</td>
+            </tr>
+          );
+        });    
+    return (
+      <div className={'tasks__catalog ui grid'}>
+          <div className={'ui three wide column'}>
+          </div>
+          <div className={'ui ten wide column'}>
+            <table className={'ui blue striped celled compact table'}>
+              <thead>
+                <tr>
+                  <th>Название</th>
+                  <th>Описание</th>
+                  <th>Статус</th>
+                  <th>Теги</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                {tasklist}
+              </tbody>
+            </table>
+          </div>
       </div>
     );
   }

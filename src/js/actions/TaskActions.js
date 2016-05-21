@@ -6,3 +6,11 @@ export function addTask(task) {
     task: task
   };
 }
+
+export function submitIdea(idea, contestId) {
+  return {
+    type: types.SUBMIT_IDEA,
+    contestId: contestId,
+    idea: idea
+  };
+}

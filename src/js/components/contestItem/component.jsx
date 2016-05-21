@@ -1,4 +1,5 @@
 import React from 'react';
+import SubmitIdea from '../SumbitIdea/component.jsx';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import { Link } from 'react-router';
@@ -8,12 +9,21 @@ import * as TaskActions from '../../actions/TaskActions.js';
 class ContestItem extends React.Component {
   render() {
     const task = this.props.tasks[this.props.routeParams.id];
-    console.log(task);
     return (
       <div>
         <h1>
           {task.label}
         </h1>
+        <p>
+          {task.description}
+        </p>
+        <p>
+         Цена {task.price}
+        </p>
+        <p>
+         Уже предложили {task.ideas.length} идей!
+        </p>
+        <SubmitIdea id={this.props.routeParams.id}/>
       </div>
     );
   }
