@@ -6,7 +6,7 @@ export default class HeaderComponent extends React.Component {
     return (
       <div className={window.location.pathname === '/' ? 'header main-header' : 'header'}>
         <div className={'ui text menu'} style={{ margin: 0 }}>
-          <div className="header item">
+          <div className="item">
             <div className="logo">
               <Link to="/">
                 IDEALIST
