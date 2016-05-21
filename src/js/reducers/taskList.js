@@ -26,6 +26,22 @@ const initialState = {
       price: '16000',
       tags: ['startup','naming','tinder'],
       ideas: []
+    },
+    3: {
+      label: 'Синопсис сериала',
+      shortDescription: 'Заявка для сериала на канале "Дачный"',
+      description: '',
+      price: '50000',
+      tags: ['tv series','synopsis'],
+      ideas: []
+    },
+    4: {
+      label: 'Слоган для компании',
+      shortDescription: 'Компания распространяет спортивные товары',
+      description: '',
+      price: '10000',
+      tags: ['tv series','synopsis'],
+      ideas: []
     }
   },
   ideas: {

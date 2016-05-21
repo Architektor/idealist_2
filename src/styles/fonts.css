@@ -1,5 +1,7 @@
 
 @font-face {
-  font-family: "Ashbury";
-  src: url("fonts/Ashbury/AshburyLig-webfont.eot");
+  font-family: "Webly";
+  font-style: normal;
+  font-weight: 400;
+  src: local("☺︎"), url("./fonts/myriad-set-pro_text.woff") format("woff");
 }

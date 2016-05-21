@@ -2,6 +2,9 @@ import React from 'react';
 import SubmitIdea from '../SumbitIdea/component.jsx';
 
 export default class IkeaContest extends React.Component {
+  handleClick = () => {
+    document.getElementById('participate_ikea').scrollIntoView();
+  }
   render() {
     return (
       <div className={'ikea__contest'}>
@@ -9,7 +12,7 @@ export default class IkeaContest extends React.Component {
           <div className={'caption'}>
             <h1>Креативный конкурс от IKEA </h1>
             <p>Присылайте ваши идеи о том, каких товаров не хватает в ассортименте магазинов IKEA. <br /> Авторы лучших идей получат ценные призы.</p>
-            <button className={'ui blue button'}>Участвовать</button>
+            <button className={'ui blue button'} onClick={this.handleClick}>Участвовать</button>
           </div>
         </div>
         <div className={'ikea__description ui'}>
@@ -33,7 +36,15 @@ export default class IkeaContest extends React.Component {
               </li>
               </ul>
           </div>
-          <SubmitIdea />
+          <div className={'ui desc__ segment'}>
+            <h2> Сроки </h2>
+            <p className={'text-center'}>
+              Работы принимаются с 21 мая 2016 года по 20 июля 2016 года
+            </p>
+          </div>
+          <div id="participate_ikea">
+            <SubmitIdea />
+          </div>
         </div>
       </div>
     );

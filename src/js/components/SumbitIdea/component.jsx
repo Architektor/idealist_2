@@ -32,7 +32,7 @@ class SubmitIdea extends React.Component {
           <div className={'eight wide centered column'}>
             <div className={'field'}>
               <label>Идея</label>
-              <textarea id="add__task__input" type="text" name="idea" onChange={this.handleInput} />
+              <textarea rows='2' id="add__task__input" type="text" name="idea" onChange={this.handleInput} />
             </div>
             <button className={'ui green button'} type="submit">Предложить идею</button>
           </div>

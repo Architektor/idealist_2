@@ -28,7 +28,7 @@ class TasksCatalog extends React.Component {
                   })
                 } 
               </td>
-              <td>{tasks[key].price}</td>
+              <td>{tasks[key].price} &#x20bd;</td>
             </tr>
           );
         });    
@@ -44,7 +44,7 @@ class TasksCatalog extends React.Component {
                   <th>Описание</th>
                   <th>Статус</th>
                   <th>Теги</th>
-                  <th>Цена</th>
+                  <th>Приз</th>
                 </tr>
               </thead>
               <tbody>

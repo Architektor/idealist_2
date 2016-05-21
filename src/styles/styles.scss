@@ -53,7 +53,7 @@ body {
   color: white;
   height: 100%;
   background-image: url(http://www.decorlock.pics/wp-content/uploads/2014/05/Finding-Amazing-Ideas-From-IKEA-2013-Catalog-Bedroom-Hobby-Room-.jpg);
-  background-color: #ecf0f1;
+  background-color: white;
   .wrapper {
     height:100%;
     width: 100%;
@@ -67,9 +67,9 @@ body {
   }
   .ikea__description {
     padding-top: 1em;
-    background-color: #ecf0f1;
     .desc__ {
       border-bottom: 1px solid rgba(0,0,0,0.4);
+      background-color: #ecf0f1;
       padding: 20px;
       padding-left: 100px;
     }
@@ -133,6 +133,10 @@ body {
   }
   span {
   }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .links {
