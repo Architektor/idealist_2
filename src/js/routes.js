@@ -8,7 +8,7 @@ import AddTask from './components/AddTask/AddTask.jsx';
 import TasksCatalog from './components/TasksCatalog/component.jsx';
 import ContestItem from './components/contestItem/component.jsx';
 import SubmitIdea from './components/SumbitIdea/component.jsx';
-import NotFoundView from './views/NotFoundView';
+import NotFoundView from './components/base/404/component.jsx';
 
 export default (
   <Route path="/" component={App}>
