@@ -18,7 +18,6 @@ export default (
     <Route path="404" component={NotFoundView} />
     <Route path="taskscatalog" component={TasksCatalog} />
     <Route path="contestitem/:id" component={ContestItem} />
-    <Route path="contestitem/:id/submitidea" component={SubmitIdea} />
     <Redirect from="*" to="404" />
   </Route>
 );
