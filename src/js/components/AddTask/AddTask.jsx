@@ -41,14 +41,14 @@ class AddTask extends React.Component {
   render() {
     return (
       <div className={'add__task__page'}>
-        <form onSubmit={this.handleSumbit} action="#" className={'ui segment form grid'}>
+        <form onSubmit={this.handleSumbit} className={'ui segment form grid'}>
           <h1 className={'ui block header row'}>
             Add task
           </h1>
           <div className={'eight wide centered column'}>
             <div className={'field'}>
               <label className={'text-center'}>Название</label>
-              <input value={this.state.label} id="add__task__input" type="text" name="label" onChange={this.handleInput} />
+              <input value={this.state.label} type="text" name="label" onChange={this.handleInput} />
             </div>
             <div className={'field'}>
               <label>Короткое описание</label>
@@ -56,12 +56,12 @@ class AddTask extends React.Component {
             </div>
             <div className={'field'}>
               <label>Подробный бриф</label>
-              <textarea value={this.state.description} id="add__task__input" type="text" name="description" onChange={this.handleInput} />
+              <textarea value={this.state.description} type="text" name="description" onChange={this.handleInput} />
             </div>
             <div className={'three wide field'}>
               <label>Цена</label>
               <div className={'ui mini right labeled input'}>
-                <input value={this.state.price} id="add__task__input" type="text" pattern="[0-9]*" name="price" onChange={this.handleInput} />
+                <input value={this.state.price} type="text" pattern="[0-9]*" name="price" onChange={this.handleInput} />
                 <div className={'ui label'}>
                   &#x20bd;
                 </div>
@@ -71,7 +71,7 @@ class AddTask extends React.Component {
               <label>Теги</label>
               <div className={'ui right labeled left icon mini input'}>
                 <i className={'tags icon'}></i>
-                <input value={this.state.tags} id="add__task__input" type="text" name="tags" onChange={this.handleInput} />
+                <input value={this.state.tags} type="text" name="tags" onChange={this.handleInput} />
                 <a className={'ui tag label'}>
                   Add Tag
                 </a>

@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import { Link } from 'react-router';
 
 import * as TaskActions from '../../actions/TaskActions.js';
+import AnswerForm from './AnswerForm';
 
 class ContestItem extends React.Component {
   render() {
