@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import IntroComponent from '../IntroComponent/IntroComponent.jsx';
 
 export default class ContestItem extends React.Component {
@@ -10,7 +9,7 @@ export default class ContestItem extends React.Component {
         <div className={'intro__section'}>
           <IntroComponent />
         </div>
-        <div className={'section'}>
+        <div className={'intro__ section'}>
         </div>
       </div>
     );

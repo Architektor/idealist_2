@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  font-family: "Webly";
   height: 100%;
   width: 100%;
 }
@@ -19,6 +20,10 @@ body {
  background-color: rgba(0, 0, 0, 0.7);
 }
 
+.intro__ {
+  background-color: rgba(0,0,0,0.7);
+}
+
 .login-item {
   color: white;
 }
@@ -28,12 +33,44 @@ body {
  background-color: rgba(0, 0, 0, 0.7);
  padding-top: 75.7px;
  width: 100%;
- background-image: url('https://pic.rutube.ru/video/cb/78/cb78c0d1176891a50d1e5529b8d39c87.jpg');
+ background-image: url('https://i.kinja-img.com/gawker-media/image/upload/s--lsID-T98--/c_scale,fl_progressive,q_80,w_800/yekei44dydqaqupeqwqh.jpg');
+ background-size: cover;
 }
 
 .tasks__catalog {
   background-color: white;
   height: 100%;
+}
+
+.ikea__contest {
+  color: white;
+  height: 100%;
+  background-image: url(http://www.decorlock.pics/wp-content/uploads/2014/05/Finding-Amazing-Ideas-From-IKEA-2013-Catalog-Bedroom-Hobby-Room-.jpg);
+  background-color: #ecf0f1;
+  .wrapper {
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    .caption {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-40%, -40%);
+    }
+  }
+  .ikea__description {
+    padding-top: 1em;
+    background-color: #ecf0f1;
+    .desc__ {
+      border-bottom: 1px solid rgba(0,0,0,0.4);
+      padding: 20px;
+      padding-left: 100px;
+    }
+    h2 {
+      text-align: center;
+    }
+    color: black;
+  }
 }
 
 .header {
@@ -65,7 +102,7 @@ body {
 }
 
 .main-header {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .intro__section {

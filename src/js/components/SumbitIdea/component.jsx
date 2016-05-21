@@ -34,7 +34,7 @@ class SubmitIdea extends React.Component {
               <label>Идея</label>
               <textarea id="add__task__input" type="text" name="idea" onChange={this.handleInput} />
             </div>
-            <button className={'ui button'} type="submit">Предложить идею</button>
+            <button className={'ui green button'} type="submit">Предложить идею</button>
           </div>
         </form>
       </div>
