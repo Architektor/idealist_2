@@ -26,6 +26,7 @@ if (process.env.NODE_ENV !== 'production') {
         <a href="/addtask">addtask  |  </a>
         <a href="/taskscatalog">taskscatalog</a>
       </div>
+      <DevTools />
     </div>
   );
 } else {
