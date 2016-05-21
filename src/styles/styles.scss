@@ -53,11 +53,17 @@ body {
 }
 
 .intro__section {
-  height: 100%;
   background-color: rgba(0,0,0,0.7);
   position: absolute;
   width: 100%;
   color: white;
+  padding-bottom: 150px;
+}
+
+.section {
+  width: 100%;
+  background-color: lightblue;
+  height: 600px;
 }
 
 .intro__component {
