@@ -1,9 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 
 import HeaderComponent from './base/header/component';
-import FooterComponent from './base/footer/component';
-
 
 export default class App extends Component {
   static propTypes = {
@@ -17,7 +15,6 @@ export default class App extends Component {
         <div className="body-container">
           {this.props.children}
         </div>
-        <FooterComponent />
       </div>
     );
   }

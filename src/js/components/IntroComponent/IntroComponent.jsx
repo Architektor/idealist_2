@@ -9,7 +9,7 @@ export default class IntroComponent extends React.Component {
           <h1>Проведите конкурс и получите много оригинальных дизайнов</h1>
           <span>Заполните бриф, а мы возьмем на себя все сложности с генерацией идей</span>
         </div>
-        <button className={'ui orange button'}><Link to="/addtask">Заказать креатив</Link></button>
+        <Link to="/addtask"><button className={'ui orange button'}>Заказать креатив</button></Link>
       </div>
     );
   }

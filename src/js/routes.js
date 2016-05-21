@@ -7,6 +7,7 @@ import TaskPage from './components/TaskPage/TaskPage.jsx';
 import AddTask from './components/AddTask/AddTask.jsx';
 import TasksCatalog from './components/TasksCatalog/component.jsx';
 import ContestItem from './components/contestItem/component.jsx';
+import IkeaContest from './components/IkeaContest/component.jsx';
 import NotFoundView from './components/base/404/component.jsx';
 
 export default (
@@ -17,6 +18,7 @@ export default (
     <Route path="404" component={NotFoundView} />
     <Route path="taskscatalog" component={TasksCatalog} />
     <Route path="contestitem/:id" component={ContestItem} />
+    <Route path="ikea" component={IkeaContest} />
     <Redirect from="*" to="404" />
   </Route>
 );
