@@ -4,26 +4,26 @@ import objectAssign from 'object-assign';
 const initialState = {
   tasks: {
     0: {
-      label: 'Логотип',
-      shortDescription: 'Нужен минималистичный логотип для iOS приложения',
+      label: 'Нейминг',
+      shortDescription: 'Нужен креатив для нейминга iOS приложения',
       description: 'Нужен минималистичный логотип для iOS приложения. Тыр пыр лорем ипсум.',
-      price: '11420',
+      price: '20000',
       tags: ['logo', 'iOS', 'mobile'],
       ideas: []
     },
     1: {
       label: 'Идея для ролика',
       shortDescription: 'Идея для вирусного видео',
-      description: 'Лорем ипсум хуипсум алохамора',
-      price: '32100',
+      description: '',
+      price: '32000',
       tags: ['youtube', 'virus-video'],
       ideas: []
     },
     2: {
       label: 'Как назвать стартап',
-      shortDescription: 'Cтарап про убийцу тиндера',
-      description: 'хуй пизда орешки',
-      price: '99999',
+      shortDescription: 'Cтарап - убийца тиндера',
+      description: '',
+      price: '16000',
       tags: ['startup','naming','tinder'],
       ideas: []
     }

@@ -33,11 +33,11 @@ class TasksCatalog extends React.Component {
           );
         });    
     return (
-      <div className={'tasks__catalog ui grid'}>
+      <div className={'tasks__catalog ui'}>
           <div className={'ui three wide column'}>
           </div>
           <div className={'ui ten wide column'}>
-            <table className={'ui very basic striped celled compact table'}>
+            <table className={'ui very basic striped celled table'}>
               <thead>
                 <tr>
                   <th>Название</th>

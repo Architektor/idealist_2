@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import IntroComponent from '../IntroComponent/IntroComponent.jsx';
 
 export default class ContestItem extends React.Component {
@@ -11,7 +10,7 @@ export default class ContestItem extends React.Component {
           <IntroComponent />
 
         </div>
-        <div className={'section'}>
+        <div className={'intro__ section'}>
         </div>
         <div className="description_with_icons">
             <img src="../../../screen.png" style={{width: '50vw', float: 'right', paddingRight: 30, marginRight: 140}} />
