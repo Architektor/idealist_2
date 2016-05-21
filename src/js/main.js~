@@ -22,7 +22,6 @@ if (process.env.NODE_ENV !== 'production') {
     <div>
       <Router history={browserHistory} routes={routes} />
       <div className={'links'}>
-        <a href="/">home  |  </a>
         <a href="/addtask">addtask  |  </a>
         <a href="/taskscatalog">taskscatalog</a>
       </div>

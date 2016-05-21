@@ -8,10 +8,8 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <div className={'index__page'}>
-        <div className={'intro__section'}>
-          <HeaderComponent />
-          <IntroComponent />
-        </div>
+        <HeaderComponent />
+        <IntroComponent />
         <FooterComponent />
       </div>
     );

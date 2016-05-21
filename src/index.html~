@@ -7,10 +7,19 @@
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles/semantic/src/styles/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+  <script src="./styles/semantic/src/styles/semantic.min.js"></script>
 </head>
 <body>
 
-<div id="app"></div>
+<div id="app">
+
+<div className={'links'}>
+  <a href="/addtask">addtask  |  </a>
+  <a href="/taskscatalog">taskscatalog</a>
+</div>
+</div>
 
 <script src="/js/vendor.bundle.js"></script>
 <script src="/js/app.js"></script>
