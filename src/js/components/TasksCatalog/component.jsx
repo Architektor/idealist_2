@@ -37,7 +37,7 @@ class TasksCatalog extends React.Component {
           <div className={'ui three wide column'}>
           </div>
           <div className={'ui ten wide column'}>
-            <table className={'ui blue striped celled compact table'}>
+            <table className={'ui very basic striped celled compact table'}>
               <thead>
                 <tr>
                   <th>Название</th>
