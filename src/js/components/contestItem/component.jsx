@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import { Link } from 'react-router';
 
 import * as TaskActions from '../../actions/TaskActions.js';
+import AnswerForm from './AnswerForm';
 
 class ContestItem extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class ContestItem extends React.Component {
         <h1>
           {task.label}
         </h1>
+        <AnswerForm id={this.props.routeParams.id} />
       </div>
     );
   }

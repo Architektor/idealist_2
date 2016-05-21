@@ -17,7 +17,6 @@ let ComponentEl;
 if (process.env.NODE_ENV !== 'production') {
   const DevTools = require('./containers/DevTools').default;
 
-  // If using routes
   ComponentEl = (
     <div>
       <Router history={browserHistory} routes={routes} />
@@ -32,7 +31,6 @@ if (process.env.NODE_ENV !== 'production') {
   );
 }
 
-// Render the React application to the DOM
 ReactDOM.render(
   <Provider store={store}>
     {ComponentEl}
