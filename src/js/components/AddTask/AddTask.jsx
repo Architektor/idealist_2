@@ -51,16 +51,40 @@ class AddTask extends React.Component {
   render() {
     return (
       <div className={'add__task__page'}>
-        <h1 className={'page__header'}>
-          Add task
-        </h1>
-        <form onSubmit={this.handleSumbit} action="#">
-          <input id="add__task__input" type="text" name="label" onChange={this.handleInput} />
-          <input id="add__task__input" type="text" name="description" onChange={this.handleInput} />
-          <input id="add__task__input" type="text" pattern="[0-9]*" name="price" onChange={this.handleInput} />
-          <input id="add__task__image__input" type="text" name="image" onChange={this.handleInput} />
-          <input id="add__task__input" type="text" name="tags" onChange={this.handleInput} />
-          <input type="submit"/>
+        <form onSubmit={this.handleSumbit} action="#" className={'ui segment form grid'}>
+          <h1 className={'ui block header row'}>
+            Add task
+          </h1>
+          <div className={'eight wide centered column'}>
+            <div className={'field'}>
+              <label className={'text-center'}>Название</label>
+              <input id="add__task__input" type="text" name="label" onChange={this.handleInput} />
+            </div>
+            <div className={'field'}>
+              <label>Подробный бриф</label>
+              <textarea id="add__task__input" type="text" name="description" onChange={this.handleInput} />
+            </div>
+            <div className={'three wide field'}>
+              <label>Цена</label>
+              <div className={'ui mini right labeled input'}>
+                <input id="add__task__input" type="text" pattern="[0-9]*" name="price" onChange={this.handleInput} />
+                <div className={'ui label'}>
+                  &#x20bd;
+                </div>
+              </div>
+            </div>
+            <div className={'six wide field'}>
+              <label>Теги</label>
+              <div className={'ui right labeled left icon mini input'}>
+                <i className={'tags icon'}></i>
+                <input id="add__task__input" type="text" name="tags" onChange={this.handleInput} />
+                <a className={'ui tag label'}>
+                  Add Tag
+                </a>
+              </div>
+            </div>
+            <button className={'ui button'} type="submit">Добавить задание</button>
+          </div>
         </form>
       </div>
     );
