@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 export default class HeaderComponent extends React.Component {
   render() {
     return (
-      <div className={window.location.pathname === '/' ? 'header main-header' : 'header'}>
+      <div className={window.location.pathname !== '/' || window.pageYOffset !== 0 ? 'header' : 'header main-header'}>
         <div className={'ui text menu'} style={{ margin: 0 }}>
           <div className="item">
             <div className="logo">

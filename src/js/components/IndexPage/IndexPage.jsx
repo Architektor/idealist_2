@@ -14,10 +14,10 @@ export default class ContestItem extends React.Component {
         <div className={'section'}>
         </div>
         <div className="description_with_icons">
-            <img src="../../../screen.png" style={{width: '70vw', float: 'right'}} />
+            <img src="../../../screen.png" style={{width: '50vw', float: 'right', paddingRight: 30, marginRight: 140}} />
           <div style={{padding: 40, float: 'left', height: 680, width:'30vw', backgroundColor: 'rgba(255, 139, 0, 0.8)'}}>
             <div style={{color: 'white'}}><h2>Заставь тысячи креативных умов работать на ваш бизнес!</h2></div>
-            <div style={{color: 'white', paddingTop: 40}}>Проведите конкурс и получите самые креативные идеи для вашего проекта.<br/> 
+            <div style={{color: 'white', paddingTop: 50}}>Проведите конкурс и получите самые креативные идеи для вашего проекта.<br/> 
 
 <p style={{paddingTop: 20}}>Заполните бриф, а все остальное доверьте профессиональным креативщикам со всего земного шара.</p></div>
           </div>
